@@ -204,9 +204,9 @@ export default function Index() {
                 <div className="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                   <Users className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Community Trusted</h3>
+                <h3 className="text-xl font-semibold mb-3">Easy & Convenient</h3>
                 <p className="text-foreground/70">
-                  Join thousands of users who rely on our service for daily updates and spiritual guidance.
+                  No app required. Get your updates via simple SMS text messages, anytime and anywhere.
                 </p>
               </div>
             </div>
