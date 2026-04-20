@@ -2,7 +2,7 @@ import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Cloud, Clock, Users, ArrowRight, CheckCircle2 } from "lucide-react";
+import { Cloud, Clock, Users, ArrowRight, CheckCircle2, BarChart3, Zap, Target } from "lucide-react";
 
 export default function Index() {
   const [email, setEmail] = useState("");
@@ -261,6 +261,69 @@ export default function Index() {
                     Get your first weather and Zmanim update right away, and every day thereafter.
                   </p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Advertising Section */}
+        <section id="advertising" className="py-20 px-4 bg-slate-50 border-t border-border">
+          <div className="container mx-auto max-w-6xl">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold mb-4">Advertising Opportunities</h2>
+              <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
+                Reach engaged subscribers with targeted SMS campaigns. Effective for our advertisers.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              {/* Advertiser Benefit 1 */}
+              <div className="bg-white rounded-xl p-8 shadow-sm hover:shadow-lg transition-shadow border border-border">
+                <div className="bg-gradient-to-br from-primary/10 to-primary/5 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                  <Target className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-xl font-semibold mb-3">Targeted Reach</h3>
+                <p className="text-foreground/70">
+                  Connect with thousands of engaged subscribers who actively opt-in to receive daily updates. Reach your audience directly.
+                </p>
+              </div>
+
+              {/* Advertiser Benefit 2 */}
+              <div className="bg-white rounded-xl p-8 shadow-sm hover:shadow-lg transition-shadow border border-secondary/10">
+                <div className="bg-gradient-to-br from-secondary/10 to-secondary/5 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                  <BarChart3 className="w-6 h-6 text-secondary" />
+                </div>
+                <h3 className="text-xl font-semibold mb-3">Measurable Results</h3>
+                <p className="text-foreground/70">
+                  Track campaign performance with detailed analytics. See exactly how your ads are performing and optimize for better ROI.
+                </p>
+              </div>
+
+              {/* Advertiser Benefit 3 */}
+              <div className="bg-white rounded-xl p-8 shadow-sm hover:shadow-lg transition-shadow border border-accent/20">
+                <div className="bg-gradient-to-br from-accent/10 to-accent/5 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                  <Zap className="w-6 h-6 text-accent" />
+                </div>
+                <h3 className="text-xl font-semibold mb-3">High Engagement</h3>
+                <p className="text-foreground/70">
+                  SMS has a 98% open rate. Your message reaches subscribers' phones instantly with unmatched engagement potential.
+                </p>
+              </div>
+            </div>
+
+            {/* Advertiser CTA */}
+            <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8 md:p-12 border border-primary/10 text-center">
+              <h3 className="text-2xl font-bold mb-4">Ready to Advertise with Us?</h3>
+              <p className="text-foreground/70 mb-8 max-w-xl mx-auto">
+                Get in touch with our advertising team to discuss custom campaigns and partnership opportunities.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button className="bg-primary hover:bg-primary/90">
+                  Contact Our Ad Team <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+                <a href="mailto:ads@yourdailytext.net" className="inline-flex items-center justify-center px-6 py-2 text-sm font-medium text-secondary border border-secondary rounded-lg hover:bg-secondary/5 transition-colors">
+                  Email: ads@yourdailytext.net
+                </a>
               </div>
             </div>
           </div>

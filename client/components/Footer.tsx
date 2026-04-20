@@ -4,7 +4,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-slate-50 border-t border-border mt-20">
+    <footer id="contact" className="bg-slate-50 border-t border-border mt-20">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
@@ -26,7 +26,7 @@ export default function Footer() {
 
           {/* Product */}
           <div>
-            <h4 className="font-semibold text-sm mb-4">Product</h4>
+            <h4 className="font-semibold text-sm mb-4">For Subscribers</h4>
             <ul className="space-y-3 text-sm">
               <li>
                 <a href="#features" className="text-foreground/60 hover:text-primary transition-colors">
@@ -34,13 +34,13 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#pricing" className="text-foreground/60 hover:text-primary transition-colors">
-                  Pricing
+                <a href="/" className="text-foreground/60 hover:text-primary transition-colors">
+                  Get Started
                 </a>
               </li>
               <li>
-                <a href="#faq" className="text-foreground/60 hover:text-primary transition-colors">
-                  FAQ
+                <a href="#" className="text-foreground/60 hover:text-primary transition-colors">
+                  Sign In
                 </a>
               </li>
             </ul>
@@ -48,21 +48,21 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h4 className="font-semibold text-sm mb-4">Company</h4>
+            <h4 className="font-semibold text-sm mb-4">For Advertisers</h4>
             <ul className="space-y-3 text-sm">
               <li>
-                <a href="#" className="text-foreground/60 hover:text-primary transition-colors">
-                  About Us
+                <a href="#advertising" className="text-foreground/60 hover:text-primary transition-colors">
+                  Advertising
                 </a>
               </li>
               <li>
-                <a href="#" className="text-foreground/60 hover:text-primary transition-colors">
-                  Blog
+                <a href="mailto:ads@yourdailytext.net" className="text-foreground/60 hover:text-primary transition-colors">
+                  ads@yourdailytext.net
                 </a>
               </li>
               <li>
-                <a href="#" className="text-foreground/60 hover:text-primary transition-colors">
-                  Contact
+                <a href="tel:347-790-8107" className="text-foreground/60 hover:text-primary transition-colors">
+                  347-790-8107
                 </a>
               </li>
             </ul>
