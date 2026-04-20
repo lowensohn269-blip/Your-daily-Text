@@ -18,9 +18,11 @@ export default function Header() {
       <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 font-bold text-xl text-primary">
-          <div className="w-8 h-8 bg-gradient-to-br from-primary to-blue-600 rounded-lg flex items-center justify-center text-white">
-            ✓
-          </div>
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2Fefa020abc5c043c8aca5189d9fac76c7%2F0531496baebb435fb37e00ffe9a36b39?format=webp&width=800&height=1200"
+            alt="Your Daily Text"
+            className="h-10 w-auto"
+          />
           <span className="hidden sm:inline">Your Daily Text</span>
         </Link>
 

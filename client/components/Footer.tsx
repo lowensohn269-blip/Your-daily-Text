@@ -10,9 +10,11 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 font-bold text-lg text-primary mb-4">
-              <div className="w-6 h-6 bg-gradient-to-br from-primary to-blue-600 rounded-lg flex items-center justify-center text-white text-sm">
-                ✓
-              </div>
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fefa020abc5c043c8aca5189d9fac76c7%2F0531496baebb435fb37e00ffe9a36b39?format=webp&width=800&height=1200"
+                alt="Your Daily Text"
+                className="h-8 w-auto"
+              />
               Your Daily Text
             </div>
             <p className="text-sm text-foreground/60">
