@@ -9,13 +9,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 font-bold text-lg text-primary mb-4">
+            <div className="flex items-center gap-3 font-bold text-lg mb-4">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Fefa020abc5c043c8aca5189d9fac76c7%2F0531496baebb435fb37e00ffe9a36b39?format=webp&width=800&height=1200"
                 alt="Your Daily Text"
                 className="h-8 w-auto"
               />
-              Your Daily Text
+              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Your Daily Text</span>
             </div>
             <p className="text-sm text-foreground/60">
               Get daily weather and Zmanim updates delivered right to your phone.

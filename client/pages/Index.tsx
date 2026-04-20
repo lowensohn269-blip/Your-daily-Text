@@ -30,7 +30,7 @@ export default function Index() {
 
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="relative py-20 md:py-32 px-4 bg-gradient-to-br from-slate-50 to-blue-50">
+        <section className="relative py-20 md:py-32 px-4 bg-gradient-to-br from-pink-50 to-blue-50">
           <div className="container mx-auto max-w-6xl">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
@@ -41,10 +41,10 @@ export default function Index() {
                   Get real-time weather forecasts and prayer times (Zmanim) delivered directly to your phone via SMS. Stay informed, always prepared.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button size="lg" className="text-base">
+                  <Button size="lg" className="text-base bg-primary hover:bg-primary/90">
                     Get Started <ArrowRight className="ml-2 w-5 h-5" />
                   </Button>
-                  <Button size="lg" variant="outline" className="text-base">
+                  <Button size="lg" variant="outline" className="text-base border-secondary text-secondary hover:bg-secondary/5">
                     Learn More
                   </Button>
                 </div>
@@ -52,14 +52,14 @@ export default function Index() {
 
               {/* Hero Image */}
               <div className="relative">
-                <div className="bg-gradient-to-br from-primary to-blue-600 rounded-2xl p-8 text-white shadow-2xl">
+                <div className="bg-gradient-to-br from-primary to-secondary rounded-3xl p-8 text-white shadow-2xl">
                   <div className="space-y-4">
-                    <div className="bg-white/20 backdrop-blur rounded-lg p-4">
+                    <div className="bg-white/20 backdrop-blur rounded-2xl p-4">
                       <p className="text-sm opacity-90">Today's Weather</p>
                       <p className="text-3xl font-bold mt-1">72°F</p>
                       <p className="text-sm opacity-90 mt-2">Partly Cloudy</p>
                     </div>
-                    <div className="bg-white/20 backdrop-blur rounded-lg p-4">
+                    <div className="bg-white/20 backdrop-blur rounded-2xl p-4">
                       <p className="text-sm opacity-90">Zmanim</p>
                       <p className="text-sm mt-2">Sunrise: 6:23 AM</p>
                       <p className="text-sm">Sunset: 7:45 PM</p>
@@ -74,7 +74,7 @@ export default function Index() {
         {/* Signup Form Section */}
         <section className="py-20 px-4 bg-white">
           <div className="container mx-auto max-w-2xl">
-            <div className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl p-8 md:p-12">
+            <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8 md:p-12 border border-primary/10">
               <h2 className="text-3xl font-bold mb-2">Start Receiving Updates</h2>
               <p className="text-foreground/70 mb-8">
                 Join thousands of subscribers getting daily weather and Zmanim updates.
@@ -178,8 +178,8 @@ export default function Index() {
 
             <div className="grid md:grid-cols-3 gap-8">
               {/* Feature 1 */}
-              <div className="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
-                <div className="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+              <div className="bg-white rounded-xl p-8 shadow-sm hover:shadow-lg transition-shadow border border-primary/10">
+                <div className="bg-gradient-to-br from-primary/10 to-primary/5 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                   <Cloud className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Real-Time Weather</h3>
@@ -189,9 +189,9 @@ export default function Index() {
               </div>
 
               {/* Feature 2 */}
-              <div className="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
-                <div className="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                  <Clock className="w-6 h-6 text-primary" />
+              <div className="bg-white rounded-xl p-8 shadow-sm hover:shadow-lg transition-shadow border border-secondary/10">
+                <div className="bg-gradient-to-br from-secondary/10 to-secondary/5 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                  <Clock className="w-6 h-6 text-secondary" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Prayer Times (Zmanim)</h3>
                 <p className="text-foreground/70">
@@ -200,9 +200,9 @@ export default function Index() {
               </div>
 
               {/* Feature 3 */}
-              <div className="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
-                <div className="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                  <Users className="w-6 h-6 text-primary" />
+              <div className="bg-white rounded-xl p-8 shadow-sm hover:shadow-lg transition-shadow border border-accent/20">
+                <div className="bg-gradient-to-br from-accent/10 to-accent/5 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                  <Users className="w-6 h-6 text-accent" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Easy & Convenient</h3>
                 <p className="text-foreground/70">
@@ -267,13 +267,13 @@ export default function Index() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 px-4 bg-gradient-to-br from-primary to-blue-600">
+        <section className="py-20 px-4 bg-gradient-to-br from-primary via-pink-600 to-secondary">
           <div className="container mx-auto max-w-4xl text-center text-white">
             <h2 className="text-4xl font-bold mb-4">Ready to Stay Informed?</h2>
             <p className="text-lg opacity-90 mb-8 max-w-2xl mx-auto">
               Join our community and start receiving daily weather and Zmanim updates today.
             </p>
-            <Button size="lg" className="bg-white text-primary hover:bg-slate-100">
+            <Button size="lg" className="bg-white text-primary hover:bg-white/90 font-semibold">
               Get Started Now <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
           </div>
